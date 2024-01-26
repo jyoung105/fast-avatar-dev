@@ -10,9 +10,9 @@ import { getRandomSeed } from "lib/seeds";
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-export const appName = "Paint by Text";
-export const appSubtitle = "Edit your photos using written instructions, with the help of an AI.";
-export const appMetaDescription = "Edit your photos using written instructions, with the help of an AI.";
+export const appName = "Fast Avatar";
+export const appSubtitle = "Make your AI profile in super fast.";
+export const appMetaDescription = "Make your AI profile in super fast.";
 
 export default function Home() {
   const [events, setEvents] = useState([]);
@@ -34,7 +34,8 @@ export default function Home() {
       setError(error.message);
       return;
     }
-    setEvents(events.concat([{ image }]));
+    // setEvents(events.concat([{ image }]));
+    setEvents([{ image }]);
   };
 
   const handleSubmit = async (e) => {

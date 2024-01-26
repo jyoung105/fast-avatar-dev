@@ -27,7 +27,7 @@ export default async function handler(req, res) {
     console.log("Using deployment")
     prediction = await replicate.deployments.predictions.create(
       "replicate",
-      "paint-by-text",
+      "fast-avatar",
       {
         input: req.body
       }
@@ -35,7 +35,7 @@ export default async function handler(req, res) {
   } else {
     console.log("Not using deployment")
     // https://replicate.com/timothybrooks/instruct-pix2pix/versions
-    const version = "30c1d0b916a6f8efce20493f5d61ee27491ab2a60437c13c588468b9810ec23f"
+    const version = "304409e093e5549d8c74a747395fbba4d3f73ba60a9f5948edc6110648b564d7"
     prediction = await replicate.predictions.create({
       version, 
       input: req.body

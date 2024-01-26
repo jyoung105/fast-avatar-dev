@@ -11,10 +11,10 @@ export default function Footer({ events, startOver, handleImageDropped }) {
   return (
     <footer className="w-full my-8">
       <div className="text-center">
-        <Link href="/about" className="lil-button">
+        {/* <Link href="/about" className="lil-button">
 
           <InfoIcon className="icon" />What is this?
-        </Link>
+        </Link> */}
 
         {events.length > 1 && (
           <button className="lil-button" onClick={startOver}>
@@ -36,17 +36,17 @@ export default function Footer({ events, startOver, handleImageDropped }) {
           </Link>)
         )}
 
-        <Link
+        {/* <Link
           href="https://github.com/replicate/instruct-pix2pix-demo"
           className="lil-button"
           target="_blank"
           rel="noopener noreferrer">
 
           <CodeIcon className="icon" />Fork repo
-        </Link>
+        </Link> */}
       </div>
 
-      <div className="text-center lil-text mt-8">
+      {/* <div className="text-center lil-text mt-8">
       <div className="inline-block py-2 px-4 border border-yellow-200 rounded-lg bg-[#fef6aa]">
       🤔 Are you a developer and want to learn how to build this? Check out the{" "}
         <Link
@@ -55,9 +55,9 @@ export default function Footer({ events, startOver, handleImageDropped }) {
           README
         </Link>.
       </div>
-      </div>
+      </div> */}
 
-      <div className="text-center lil-text mt-8">
+      {/* <div className="text-center lil-text mt-8">
         Powered by{" "}
         <Link href="https://www.timothybrooks.com/instruct-pix2pix/" target="_blank">
           InstructPix2Pix
@@ -76,7 +76,7 @@ export default function Footer({ events, startOver, handleImageDropped }) {
         <Link href="https://github.com/replicate/instruct-pix2pix-demo" target="_blank">
           GitHub
         </Link>
-      </div>
+      </div> */}
     </footer>
   );
 }

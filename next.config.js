@@ -18,7 +18,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "user-images.githubusercontent.com",
+        hostname: "github-production-user-asset-6210df.s3.amazonaws.com",
       },
     ],
   },

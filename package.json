@@ -1,6 +1,6 @@
 {
-  "name": "paint-by-text",
-  "description": "Modify images by chatting with a generative AI model.",
+  "name": "fast-avatar",
+  "description": "Make your AI profile in super fast.",
   "version": "1.0.0",
   "private": true,
   "scripts": {

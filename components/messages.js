@@ -51,8 +51,8 @@ export default function Messages({ events, isProcessing, onUndo }) {
               {(isProcessing || index < events.length - 1) && (
                 <Message sender="replicate" isSameSender>
                   {index === 0
-                    ? "What should we change?"
-                    : "What should we change now?"}
+                    ? "How do you want to make your profile?"
+                    : "How do you want to make your profile now?"}
                 </Message>
               )}
             </Fragment>

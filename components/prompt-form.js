@@ -28,8 +28,8 @@ export default function PromptForm({
       <Message sender="replicate" isSameSender>
         <label htmlFor="prompt-input">
           {isFirstPrompt
-            ? "What should we change?"
-            : "What should we change now?"}
+            ? "How do you want to make your profile?"
+            : "How do you want to make your profile now?"}
         </label>
       </Message>
 
@@ -52,7 +52,7 @@ export default function PromptForm({
             className="bg-black text-white rounded-r-md text-small inline-block p-3 flex-none"
             type="submit"
           >
-            Paint
+           Generate
           </button>
         )}
       </div>

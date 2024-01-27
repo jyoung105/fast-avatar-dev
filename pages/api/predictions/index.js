@@ -35,7 +35,7 @@ export default async function handler(req, res) {
   } else {
     console.log("Not using deployment")
     // https://replicate.com/timothybrooks/instruct-pix2pix/versions
-    const version = "304409e093e5549d8c74a747395fbba4d3f73ba60a9f5948edc6110648b564d7"
+    const version = "c98b2e7a196828d00955767813b81fc05c5c9b294c670c6d147d545fed4ceecf"
     prediction = await replicate.predictions.create({
       version, 
       input: req.body

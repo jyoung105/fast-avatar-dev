@@ -11,8 +11,8 @@ import { getRandomSeed } from "lib/seeds";
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 export const appName = "Fast Avatar";
-export const appSubtitle = "Make your AI profile in super fast.";
-export const appMetaDescription = "Make your AI profile in super fast.";
+export const appSubtitle = "Make your AI profile in super fast";
+export const appMetaDescription = "Make your AI profile in super fast";
 
 export default function Home() {
   const [events, setEvents] = useState([]);
@@ -55,9 +55,11 @@ export default function Home() {
     const body = {
       prompt,
       image: lastImage,
+      sdxl_weights: "juggernaut-xl-v8",
+      controlnet_conditioning_scale: 0.3,
     };
 
-    const response = await fetch("/api/predictions", {
+    const response = await fetch("/api/predictions/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -89,7 +91,8 @@ export default function Home() {
       if (prediction.status === "succeeded") {
         setEvents(
           myEvents.concat([
-            { image: prediction.output?.[prediction.output.length - 1] },
+            // { image: prediction.output?.[prediction.output.length - 1] },
+            { image: prediction.output },
           ])
         );
       }
